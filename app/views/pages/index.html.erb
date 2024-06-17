@@ -1,2 +1,11 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<div class="page-content">
+  <div>
+    <h1>Can't decide where to eat?</h1>
+  </div>
+  <div>
+    <p>Click the button below so we can choose for you!</p>
+  </div>
+  <div class="button-container">
+    <%= link_to "Let's eat!", restaurants_path, class: "randomize_link" %>
+  </div>
+</div>
