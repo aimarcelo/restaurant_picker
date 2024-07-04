@@ -1,12 +1,11 @@
 body {
-  background-image: none;
   background-color: bisque;
 }
 
 /* navbar */
 
 .navbar {
-  height: 56px;
+  height: 52px;
   width: 100vw;
   background-color: #7a2e09;
   position: fixed;
@@ -20,21 +19,145 @@ body {
   display: flex;
   flex-direction: row;
 }
+.app-name-container:hover {
+  cursor: pointer;
+}
 
-.navbar .app-name-container > p {
+.navbar .app-icon-container {
+  align-items: center;
+  display: flex;
+}
+
+.link-to-home {
   font-family: Poppins;
   font-size: 22px;
   color: #fefcfa;
   font-weight: 500;
   padding-left: 8px;
+  text-decoration: none;
 }
 
 .app-icon-container svg {
-  height: 24px;
-  width: 24px;
+  height: 22px;
+  width: 22px;
   background-color: #fefcfa;
   border-radius: 6px;
   padding: 2px;
 }
 
 /* main content */
+
+.main-content {
+  font-family: Poppins;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  background-image: url("food-flatlay-1.jpg");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.window-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 75vw;
+  background-color: #fefcfa;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.result-container {
+  flex: 1;
+}
+
+.result-header {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* main content: restaurant image */
+
+.image-container {
+  width: 260px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgb(150, 145, 145);
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: auto;
+}
+
+/* main content: restaurant info */
+
+.restaurant-info {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-name {
+  font-size: 56px;
+  font-weight: 600;
+  padding-bottom: 16px;
+  line-height: 67px;
+  text-align: center;
+}
+
+.price-container {
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 18px;
+}
+
+/* randomizer */
+
+.window-container .randomizer-container {
+  display: flex;
+  justify-content: center;
+}
+.randomize-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgb(32 31 31);
+  padding: 8px 16px;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.randomize-link {
+  color: rgb(32 31 31);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.randomize-link-container:hover {
+  border: 2px solid rgb(32 31 31);
+  cursor: pointer;
+
+  /* .randomize-link {
+    font-weight: 500;
+  } */
+}
