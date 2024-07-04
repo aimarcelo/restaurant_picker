@@ -1,16 +1,20 @@
 body {
-  height: 100vh;
-  background-image: url("food-flatlay-1.jpg");
-  background-size: cover;
-  background-position: 100%;
-  background-repeat: no-repeat;
   font-family: Alegreya;
 }
+
 body,
 h1,
 p {
   margin: 0px;
   padding: 0px;
+}
+
+.background {
+  height: 100vh;
+  background-image: url("food-flatlay-1.jpg");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
 .page-content {
