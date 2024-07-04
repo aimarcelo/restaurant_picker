@@ -1,0 +1,40 @@
+body {
+  background-image: none;
+  background-color: bisque;
+}
+
+/* navbar */
+
+.navbar {
+  height: 56px;
+  width: 100vw;
+  background-color: #7a2e09;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar .app-name-container {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .app-name-container > p {
+  font-family: Poppins;
+  font-size: 22px;
+  color: #fefcfa;
+  font-weight: 500;
+  padding-left: 8px;
+}
+
+.app-icon-container svg {
+  height: 24px;
+  width: 24px;
+  background-color: #fefcfa;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+/* main content */
