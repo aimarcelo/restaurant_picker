@@ -21,7 +21,7 @@
             <p>Php <%= @restaurant.price_for_two %></p>
           </div>
           <div class="google-link-container">
-            <%= link_to "See near #{@restaurant.name} branches", @restaurant.google_url, target: "_blank" %>
+            <%= link_to "See near #{@restaurant.name} branches", @restaurant.google_url, target: "_blank", class: "google-link" %>
           </div>
         </div>
       </div>
